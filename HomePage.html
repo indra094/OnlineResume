@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Indrajeet Nandy
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="Styling.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" >
+				
+				$(window).scroll(function() {
+		
+					var scrollVal = $(this).scrollTop();
+					console.log(scrollVal);
+					
+					if ( scrollVal > 602 ) {
+						$('.navbar').css({'position':'fixed','top' :'60px'});
+						if(scrollVal<663)
+						{
+					
+						}
+						else{
+						}
+					}
+					else{
+						$('.navbar').css({'position':'absolute','top':'100%'});
+					}
+				});
+			
+		</script>
+	</head>
+	
+	<body data-spy="scroll"  data-target="#navbar" >
+		<div class="jumbotron"  style="height:662px;" >
+			<div class="container">
+			
+				<h1>Indrajeet Nandy</h1>
+				<p>Online resume</p>
+			</div>
+			
+			<div class="overlay">
+			</div>
+			
+			<a href="#profile" class="scrollLink">
+				<span class="glyphicon glyphicon-chevron-down"></span>
+			</a>
+			
+		</div>
+		
+		<nav class="navbar navbar-default" id="navbar" role="navigation" >
+			
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#profile" id="navProfile" >Profile</a></li>
+					<li><a href="#experiences">Experiences</a></li>
+					<li><a href="#abilities">Abilities</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		
+		</nav>
+		
+		<div class="content">
+			<div class="profile-class" id="profile">
+				<h2>Profile</h2>
+					<p>	I'm a keen and curious programmer.</p>
+				<hr>
+				<div class="AboutMe">
+					<h3>About Me</h3>
+					<p>	I love developing web and Android applications. I am a Software Engineer with good knowledge in developing Android applications.
+						When I'm not doing anything related to work, I like sketching, playing the piano and (love) playing games.
+					</p>
+				</div>
+				<div class="Details">
+				<h3>Details</h3>
+					<p>	</p>
+				</div>
+			</div>
+		
+			<div class="exp-class" id="experiences">
+				<h2>Experiences</h2>
+				<hr>
+			</div>
+		
+			<div class="ability-class" id="abilities">
+				<h2>Abilities</h2>
+				<hr>
+			</div>
+		
+			<div class="project-class" id="projects">
+				<h2>Projects</h2>
+				<hr>
+			</div>
+		
+			<div class="contact-class" id="contact">
+				<h2>Contact</h2>
+				<hr>
+			</div>
+		</div>
+	</body>
+	
+</html>

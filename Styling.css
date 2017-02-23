@@ -1,0 +1,169 @@
+
+hr	{
+    border-color: #727878;
+    opacity: 0.2;
+}	
+
+h1,h2,h3,h4{
+	color:#6ac738;
+}
+
+p{
+	color:#727878;
+}
+
+.jumbotron{
+	background:fixed;
+	background-image:url("gohan.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	font-weight:100;
+	font-style:italic;
+	font-family:sans-serif-thin;
+	margin-bottom:0px;
+}
+			
+.jumbotron .container { 
+	position: relative; 
+	top: 28%; 
+	z-index: 4; 
+	text-align: center; 
+	color: #FFFFFF; 
+}
+			
+
+
+.jumbotron .container h1 { 
+	padding-bottom: 20px; 
+	border-bottom: 1px solid #FFFFFF; 
+	border-bottom-color: rgba(255,255,255,0.35); 
+	display: inline-block; 
+	font-family:Sans-Serif-thin;
+	font-size:63px;
+}
+			
+.jumbotron .container p { 
+	font-size: 28px; 
+	color: #FFFFFF; 
+}
+		
+.jumbotron .overlay { 
+	background-color: #003300; 
+	position: absolute; 
+	top: 0px; 
+	bottom: 0px; 
+	left: 0px; 
+	right: 0px; 
+	opacity: 0.75; 
+	z-index: 2; 
+}
+	
+.jumbotron .scrollLink { 
+	height: 80px; 
+	width: 110px; 
+	position: absolute; 
+	bottom: 0px; 
+	right: 5%; 
+	background-color: #222222; 
+	text-align: center; 
+	z-index: 4; 
+}
+			
+.jumbotron .scrollLink .glyphicon { 
+	color: #FFFFFF; 
+	font-size: 30px; 
+	padding-top: 20px; 
+}			
+			
+.jumbotron .scrollLink:hover .glyphicon { 
+	padding-top: 25px; 
+}
+
+.navbar	{
+	border:0px; 
+	background-color: #222222; 
+	position: absolute; 
+	top: 100%; 
+	right: 5%; 
+	width: 110px; 
+	z-index: 999; 
+}
+
+.navbar .navbar-collapse { 
+	padding: 0px;
+	max-height: none; 
+}
+
+.navbar .nav > li {
+	display: block;
+	float: none;
+	height: 80px;
+} 
+
+.navbar .nav > li a { 
+	display: block;  
+	height: 80px; 
+	text-align: center; 
+	padding-top: 30px; 
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { 
+	color: #999999; 
+}
+
+.navbar .navbar-nav { 
+	float: none;
+	margin: 0px;
+}
+
+.active{
+	background: #6ac738;
+	color: #FFFFFF;
+
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { 
+	background: #6ac738;
+	color: #FFFFFF; 
+}
+
+.content > * {
+	margin: 0px 18px;
+	padding: 40px 180px;
+	font-family:Century Gothic;
+	font-weight:100;
+}
+
+
+.content > * > h2	{
+	text-align:center;
+	margin:20px 0px; 
+	font-size: 50px; 
+		
+}
+
+.content > * > p{
+	font-size: 21px;
+	margin-bottom: 20px; 
+	text-align:center;
+	
+}
+
+.content> *> hr{
+	margin: 40px 0px;
+	
+}
+
+.content> *> *> h3{
+	font-size:28px;
+	margin:20px 0px;
+	
+}
+
+.content> *> *> p{
+	font-size: 15px;
+}
