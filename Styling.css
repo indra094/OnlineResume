@@ -4,12 +4,22 @@ hr	{
     opacity: 0.2;
 }	
 
-h1,h2,h3,h4{
+h1,h2,h3{
 	color:#6ac738;
+}
+
+h3{
+	font-size:28px;
+	margin:20px 0px;
+}
+
+h4{
+	color:#222222;
 }
 
 p{
 	color:#727878;
+	font-size:15px;
 }
 
 .jumbotron{
@@ -120,20 +130,20 @@ p{
 	margin: 0px;
 }
 
-.active{
-	background: #6ac738;
-	color: #FFFFFF;
-
-}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus { 
 	background: #6ac738;
 	color: #FFFFFF; 
 }
 
+
+.navbar-default .navbar-nav >* :not(.active){
+	
+}
+
 .content > * {
-	margin: 0px 18px;
-	padding: 40px 180px;
+	
+	padding: 40px 198px;
 	font-family:Century Gothic;
 	font-weight:100;
 }
@@ -158,12 +168,72 @@ p{
 	
 }
 
-.content> *> *> h3{
+.content> *> *> *>h3{
 	font-size:28px;
 	margin:20px 0px;
 	
 }
 
-.content> *> *> p{
+.content> *> *> *> p{
 	font-size: 15px;
+	display:inline-block;
 }
+
+.content> *> *> *> h4{
+	color:#222222;
+}
+
+.row{
+	
+	display:table-row;
+	width: 100%;
+	
+}
+
+.row> div{
+	max-width:400px;	
+	display: inline-table;
+	vertical-align: text-top;
+	padding-right:40px;
+	margin-bottom:20px;
+}
+
+.AboutMe{
+	width:300px;
+}
+
+.DP{
+
+}
+
+.DP img{
+	border-radius: 50%;
+    border: 5px solid #adfb6c;
+	width: 100%;
+    max-width: 300px;
+	max-height: 300px;
+	margin:0px 20px;
+	vertical-align: middle;
+}
+
+table{
+}
+
+tr{
+	
+}
+
+td{
+	text-align:left;
+	vertical-align:text-top;
+	padding-bottom:30px;
+}
+
+td.Col1{
+	
+	width:30%;
+	
+}
+
+
+.content>*:nth-child(even){background-color: #f2f2f2}
