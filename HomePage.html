@@ -10,28 +10,61 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="Styling.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" >
 				
-				$(window).scroll(function() {
+			$(window).scroll(function() {
 		
-					var scrollVal = $(this).scrollTop();
-					console.log(scrollVal);
+				var scrollVal = $(this).scrollTop();
+				console.log(scrollVal);
 					
-					if ( scrollVal > 602 ) {
-						$('.navbar').css({'position':'fixed','top' :'60px'});
-						if(scrollVal<663)
-						{
-					
-						}
-						else{
-						}
+				if ( scrollVal > 602 ) {
+					$('.navbar').css({'position':'fixed','top' :'60px'});
+					if(scrollVal<663)
+					{
+				
 					}
 					else{
-						$('.navbar').css({'position':'absolute','top':'100%'});
 					}
-				});
+				}
+				else{
+					$('.navbar').css({'position':'absolute','top':'100%'});
+				}
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+    
+				var filledStar='<span class="glyphicon glyphicon-star filled Score" ></span>';
+				var emptyStar='<span class="glyphicon glyphicon-star Score" ></span>';
+				var className='.star';
+				for(i=1;i<=5;i++){
+					className='.star'+i;
+					for(x=1;x<=i;x++){
+						$(className).prepend(filledStar);
+					}
+					for(x=1;x<=5-i;x++){
+						$(className).prepend(emptyStar);
+					}
 			
+				}
+				//$(".star1").append(emptyStar);
+			});
+		</script>
+		<script>
+			/*$(document).ready(function(){
+				$("li").hover(function(){
+				
+					$(this).css("background-color", "#d3d3d4");
+			
+				},
+				function(){
+					$(this).css("background-color", "#ffffff");
+				}
+				
+				);
+			});*/	
 		</script>
 	</head>
 	
@@ -180,10 +213,10 @@
 							</td>
 						</tr>
 					</table>
-					<hr>
+					
 
 				</div>
-				
+				<hr>
 				<div >
 					<h3>
 						Career
@@ -258,7 +291,7 @@
 			<div class="ability-class" id="abilities">
 				<h2>Abilities</h2>
 				<p>
-					"I am the prince of all Saiyans. The whole world will bow infront of me."
+					"I am the prince of all Saiyans. The whole world shall bow before me."
 					</br>
 					- Vegeta
 				</p>
@@ -267,17 +300,217 @@
 					<h3>
 						Skills
 					</h3>
+					<div class="row">
+						<div class="ColList ColList1" >
+							<ul>
+								<li>
+									<span class="AreaOfSkill star5">
+										C++
+									</span>
+									
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										OpenGL
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										C
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										SQL
+									</span>
+								</li>
+								
+								<li>
+									<span class="AreaOfSkill star4">
+										PHP
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										OSG
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										Android Application Development
+									</span>
+								</li>
+								
+							</ul>
+						</div>	
+						<div class="ColList">
+							<ul>
+								<li>
+									<span class="AreaOfSkill star4">
+										HTML
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star3">
+										CSS
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star3">
+										javascript
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star3">
+										Java
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star3">
+										Unix Shell Programming
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star3">
+										jQuery
+									</span>
+								</li>
+								
+								
+								<li>
+									<span class="AreaOfSkill star2">
+										OpenCV
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				
+				<hr>
 				<div>
 					<h3>
 						Languages
 					</h3>
-				</div>
+					<div class="row">
+						<div class="ColList ColList1" >
+							<ul>
+								<li>
+									<span class="AreaOfSkill star5">
+										English(Daily Use)
+									</span>
+									
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										Hindi(Daily use too)
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										Bengali(Mother Tongue)
+									</span>
+								</li>
+								
+								
+							</ul>
+						</div>	
+						<div class="ColList">
+							<ul>
+								
+								<li>
+									<span class="AreaOfSkill star2">
+										Kannada(Can survive)
+									</span>
+								</li>
+								
+								<li>
+									<span class="AreaOfSkill star1">
+										Marathi(Can barely survive:P)
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
 				
+				</div>
+				<hr>
 				<div>
 					<h3>
+						Tools
 					</h3>
+					<div class="row">
+						<div class="ColList ColList1" >
+							<ul>
+								
+								<li>
+									<span class="AreaOfSkill star5">
+										Notepad++
+									</span>
+									
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										Visual Studio 2013
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										Eclipse
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star5">
+										Git/Git Extensions/GitHub
+									</span>
+								</li>
+								
+								
+								<li>
+									<span class="AreaOfSkill star4">
+										Windows
+									</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="ColList">
+							<ul>
+								
+								<li>
+									<span class="AreaOfSkill star4">
+										Ubuntu
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										XAMP
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										WAMP
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										Google Chrome
+									</span>
+								</li>
+								<li>
+									<span class="AreaOfSkill star4">
+										SQLite
+									</span>
+								</li>
+								
+								<li>
+									<span class="AreaOfSkill star3">
+										Android Studio
+									</span>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				
 				</div>
 			</div>
 		
