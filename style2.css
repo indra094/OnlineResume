@@ -1,0 +1,46 @@
+#projects .Fig {
+	display:inline-block;
+	min-width:180px;
+	float:left;
+	padding:0;
+	
+}
+
+#projects .Col1{
+	
+	margin-right:112px;
+
+}
+
+#projects figure{
+	width:110%;
+	position:relative;
+	overflow: hidden; 
+	
+}
+
+#projects img{
+	width:120%;
+	
+}
+
+#projects figcaption{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	color:#ffffff;
+	background-color:#003300;
+	opacity:0.7;
+	padding:20px 30px 20px 30px;
+	
+}
+
+#projects figcaption h3{
+	overflow:hidden;
+}
+
+#projects figcaption>*{
+	opacity:1;
+}
