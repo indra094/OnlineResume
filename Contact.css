@@ -1,0 +1,31 @@
+.contact-class {
+	background-color:#434242;
+	padding-bottom:250px;
+}
+
+.contact-class .row{
+	display:inline-block;
+	
+	color:#ffffff;
+	margin:0;
+}
+
+.contact-class ul{
+	list-style-type:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.contact-class div{
+	margin:0;
+}
+
+.contact-class li{
+	padding-bottom:20px;
+}
+
+.contact-class a{
+	color:#d2d2d2;
+	font-size:15px;
+}

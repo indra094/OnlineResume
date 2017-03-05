@@ -21,7 +21,8 @@
 
 #projects img{
 	width:120%;
-	
+	transition: transform 0.35s;
+	transform: translate3d(-10%,0,0);
 }
 
 #projects figcaption{
@@ -87,6 +88,11 @@
 
 #fig:hover hr{
 	transform: translate3d(0,0,0);
+}
+
+
+#fig:hover img{
+	transform:translate3d(0,0,0);
 }
 
 #fig:hover figcaption{
