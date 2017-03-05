@@ -30,17 +30,69 @@
 	bottom:0;
 	left:0;
 	right:0;
-	color:#ffffff;
-	background-color:#003300;
-	opacity:0.7;
+	
+	background-color:rgba(0,60,0,0);
+	
 	padding:20px 30px 20px 30px;
+	
+}
+
+
+#projects figcaption *{
+	color:#ffffff;
+	opacity:0;
+}
+
+#projects figcaption> hr{
+	
+	
+	transition: transform 0.35s;
+	transform: translate3d(-100%,0,0);
+	border-top:2px solid #ffffff;
+}
+
+#projects figcaption>p{
+
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(100%,0,0);
 	
 }
 
 #projects figcaption h3{
 	overflow:hidden;
+	color:#6ac738;
+}
+#projects .glyphicon-new-window{
+	
+	text-align:center;
+	vertical-align:middle;
+	color:#ffffff;
+	font-size:25px;
+	
+}
+#projects .glyphicon{
+	background-color:#6ac738;
+	opacity:1;
+	width:13%;
+	height:15%;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:2%;
 }
 
-#projects figcaption>*{
-	opacity:1;
+#fig:hover  p{
+	transform: translate3d(0,0,0);
+}
+
+#fig:hover hr{
+	transform: translate3d(0,0,0);
+}
+
+#fig:hover figcaption{
+	background-color:rgba(0,60,0,0.7);
+}
+
+#fig:hover figcaption * {
+	opacity: 1;
 }
