@@ -99,7 +99,7 @@
 }
 
 #fig:hover figcaption{
-	background-color:rgba(0,60,0,0.7);
+	background-color:rgba(0,50,0,0.8);
 }
 
 #fig:hover figcaption * {
